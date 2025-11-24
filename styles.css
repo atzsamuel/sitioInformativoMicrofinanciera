@@ -20,11 +20,19 @@ main {
 h1 {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin: 0 0 0.5rem 0;
-  color:#1a8fc5;
-  background-color: #b45609;
+  color:#15580f;
+  background-color: #f0f5ef;
 }
 
 p {
   margin: 0;
-  color: #555;
+  color: #1b0606;
+}
+/* POSICIÓN EN LA ESQUINA SUPERIOR IZQUIERDA */
+.esquina-superior-izq {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;  
+    color: #003366;  
 }
