@@ -16,18 +16,32 @@
 
 
 	<header>
+		<div class="logo">Banco De Mi Gente</div>
 		<nav>
 			<ul>
-				<li><div class="logo">Banco De Mi Gente</div></li>
+				<!-- BOTÓN MENÚ MÓVIL -->
+				<li><button class="menu-toggle" onclick="toggleMenu()">☰</button></li>
 				<li><a href="#inicio">Inicio</a></li>
 				<li><a href="#requisitos">Requisitos</a></li>
 				<li><a href="#preguntasfrecuentes">Preguntas Frecuentes</a></li>
 				<li><button class="cotizar-btn" onclick="abrirModal()">Calculadora de créditos(Proximamente)</button> </li>
-		
+			
 			</ul>
-
 		</nav>
 	</header>
+
+	<div class="mobile-menu" id="mobileMenu">
+		<button class="close-menu" onclick="toggleMenu()">✕</button>
+	
+		<a href="#inicio" onclick="toggleMenu()">Inicio</a>
+		<a href="#requisitos" onclick="toggleMenu()">Requisitos</a>
+		<a href="#preguntasfrecuentes" onclick="toggleMenu()">Preguntas Frecuentes</a>
+	
+		<button class="menu-btn cotizar-btn" onclick="toggleMenu(); abrirModal();">
+			Calculadora de créditos (Próximamente)
+		</button>
+	</div>
+
 
 	<div>
 		<main>
@@ -168,7 +182,7 @@
 				crossorigin="anonymous"></script>
 
 
-			<ahref="https: //wa.me/50245187817?text=Hola%2C%20necesito%20ayuda%20con%20mi%20crédito"
+			<ahref="https://wa.me/50245187817?text=Hola%2C%20necesito%20ayuda%20con%20mi%20crédito"
 				class="whatsapp-float" target="_blank">
 				<i class="fa-brands fa-whatsapp"></i>
 				</a>

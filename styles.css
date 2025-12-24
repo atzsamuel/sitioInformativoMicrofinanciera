@@ -138,7 +138,7 @@ nav ul li a:hover {
 
 .cotizar-btn {
   padding: 10px;
-  background: #0A5A24;
+  background: #035310;
   color: white;
   border: none;
   cursor: pointer;
@@ -148,8 +148,8 @@ nav ul li a:hover {
 }
 
 .btn-whatsapp {
-  background: rgb(75, 207, 88);
-  border: 2px solid #78e67d;
+  background: rgb(6, 138, 19);
+  border: 2px solid #0b8d11;
   color: #c2e9d0;
   padding: 10px 18px;
   border-radius: 10px;
@@ -380,12 +380,12 @@ html {
 }
 
 .btn-whatsapp {
-    background-color: #6dd392;
+    background-color: #08a040;
     color: white;
 }
 
 .btn-whatsapp:hover {
-    background-color: #34e678;
+    background-color: #08441f;
 }
 
 
@@ -405,14 +405,16 @@ html {
 
   header {
     padding: 10px 16px;
+    height: 18%;
     gap: 12px;
+    justify-content: flex-end;
   }
 
   nav ul {
     margin-left: 0;
     flex-direction: column;
     gap: 12px;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   nav ul li a {
@@ -636,11 +638,107 @@ html {
 
 
 
+/* PANEL */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background: oklab(100% 0 -0.00011 / 0.993);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #0a5c2b;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.close-menu {
+  align-self: flex-end;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #0c8338;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* SOLO CELULAR */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  font-size: 26px;
+  cursor: pointer;
+  }
+}
+
+/* OCULTAR MENÚ SUPERIOR SOLO EN MÓVIL */
+@media (max-width: 768px) {
+  header nav ul li a,
+  header nav .cotizar-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  header {
+    padding: 1px 10px
+  }
+}
+
+
+header nav ul {
+  display: flex;
+  align-items: left;
+}
 
 
 
 
+@media (max-width: 768px) {
 
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*  centra las cards */
+  }
+
+  .card {
+    width: 90%;          /*  ancho cómodo en móvil */
+    max-width: 360px;    /* evita que se vea gigante */
+    margin: 12px auto;   /* centrado perfecto */
+  }
+
+}
 
 
 

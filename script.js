@@ -30,3 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
