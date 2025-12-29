@@ -565,7 +565,7 @@ html {
   gap: 15px;
 }
 
-.mobile-menu a {
+.mobile-menu a { 
   text-decoration: none;
   color: #0a5c2b;
   font-size: 18px;
