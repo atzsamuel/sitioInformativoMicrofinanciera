@@ -33,3 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
 }
+
+const width = window.innerWidth;
+const height = window.innerHeight;
